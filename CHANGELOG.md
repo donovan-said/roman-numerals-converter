@@ -17,20 +17,6 @@ __Reference__:
 
 # CHANGELOG
 
-## [0.3.0]
-
-### Changed
-
-* Go pre-commit provider, as this one handles go-vet much better, specifically
-  go files in sub directories, which the previous provider didn't handle well
-
-## [0.2.0]
-
-### Removed
-
-* pre-commit install guide, as this should be installed outside of this repo,
-  seeing as it will be used for multiple repositories
-
 ## [0.1.0]
 
 ### Added
