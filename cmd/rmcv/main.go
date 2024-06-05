@@ -19,13 +19,19 @@ This list has been obtained from https://en.wikipedia.org/wiki/Roman_numerals
 
 package main
 
-
 import (
+	"os"
+
+	"github.com/donovan-said/roman-numerals-converter/internal/converter"
 	"github.com/donovan-said/roman-numerals-converter/internal/prompt"
 )
 
 func main() {
-	//----------------------------------------------------------------------
-	// User input is used to decide whether to populate the database or not
-	prompt.UserPrompt()
+	input, val := prompt.UserPrompt()
+	if !val {
+		os.Exit(1)
+	} else {
+		converter.Converter(input)
+	}
+
 }

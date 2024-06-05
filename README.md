@@ -8,12 +8,16 @@ from [freecodecamp - App Ideas](https://www.freecodecamp.org/news/here-are-some-
 - [Roman Numerals to Decimal Converter](#roman-numerals-to-decimal-converter)
   - [Content](#content)
   - [Steup](#steup)
+  - [Running the Script](#running-the-script)
   - [References](#references)
 
 ## Steup
 
 * ```go mod init roman-numerals-converter```
 
+## Running the Script
+
+* ```go run cmd/rmcv/main.go```
 
 ## References
 
