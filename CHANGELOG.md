@@ -21,7 +21,7 @@ __Reference__:
 
 ### Changed
 
-* Moved validation code into its own module in internal/
+* Moved validation logic into its own module in internal/
 * Absracted code in promt and validation scripts
 
 ## [0.1.0]
