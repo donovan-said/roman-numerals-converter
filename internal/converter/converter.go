@@ -1,7 +1,6 @@
 /*
-
 Algorithm derived from:
-* https://www.noobgeek.in/blogs/roman-to-integer-leetcode-golang-solution
+- https://www.noobgeek.in/blogs/roman-to-integer-leetcode-golang-solution
 */
 
 package converter
@@ -44,7 +43,7 @@ func Converter(user_input string) (reponse int) {
 		previous_numeral = string(v)
 	}
 
-	fmt.Println("Converted decimal_value is: ", decimal_value)
+	fmt.Println(">> Converted decimal value =", decimal_value)
 
 	return decimal_value
 }

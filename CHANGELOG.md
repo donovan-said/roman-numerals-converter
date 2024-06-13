@@ -17,6 +17,13 @@ __Reference__:
 
 # CHANGELOG
 
+## [0.2.0]
+
+### Changed
+
+* Moved validation code into its own module in internal/
+* Absracted code in promt and validation scripts
+
 ## [0.1.0]
 
 ### Added
