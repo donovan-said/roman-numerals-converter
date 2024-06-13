@@ -22,7 +22,7 @@ __Reference__:
 ### Changed
 
 * Moved validation logic into its own module in internal/
-* Absracted code in promt and validation scripts
+* Abstracted code in prompt and validation scripts
 
 ## [0.1.0]
 
