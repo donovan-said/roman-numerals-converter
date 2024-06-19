@@ -17,6 +17,12 @@ __Reference__:
 
 # CHANGELOG
 
+## [0.3.0]
+
+### Changed
+
+* Simplified the conversion logic
+
 ## [0.2.0]
 
 ### Changed
