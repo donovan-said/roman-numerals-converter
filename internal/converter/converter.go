@@ -7,7 +7,7 @@ package converter
 
 import "fmt"
 
-var symbol_mapping = map[string]int{
+var rom_mapping = map[string]int{
 	"I": 1,
 	"V": 5,
 	"X": 10,
@@ -19,31 +19,35 @@ var symbol_mapping = map[string]int{
 
 func Converter(user_input string) (reponse int) {
 	// Initialize the results value
-	decimal_value := 0
+	dec_val := 0
 
 	// Store the previous roman symbol, so as to handle subtraction cases
-	previous_numeral := ""
+	prev_num := ""
 
 	// Loop through each symbol defined in the user_input
 	for _, v := range user_input {
-		/*
-			Checking to see if the current value is greater than the
-			previous symbol.
-		*/
-		if symbol_mapping[string(v)] > symbol_mapping[previous_numeral] {
-			// Subtract the previous value from the result
-			decimal_value = decimal_value - symbol_mapping[previous_numeral]
-			// Calculate the difference
-			decimal_value = decimal_value + (symbol_mapping[string(v)] - symbol_mapping[previous_numeral])
+
+		if rom_mapping[string(v)] > rom_mapping[prev_num] {
+			/*
+				If current value is great than the previous
+				value, subtract previous value from current
+				value, e.g.
+				IV (1, 5) = 5 - 1 = 4
+			*/
+			dec_val = rom_mapping[string(v)] - rom_mapping[prev_num]
 		} else {
-			// Add the current symbols value to the result
-			decimal_value += symbol_mapping[string(v)]
+			/*
+				Add the current symbols value to the result,
+				e.g.
+				XI (10, 1) = 10 + 1 = 11
+			*/
+			dec_val += rom_mapping[string(v)]
 		}
 
-		previous_numeral = string(v)
+		prev_num = string(v)
 	}
 
-	fmt.Println(">> Converted decimal value =", decimal_value)
+	fmt.Println(">> Converted decimal value =", dec_val)
 
-	return decimal_value
+	return dec_val
 }
