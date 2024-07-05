@@ -7,13 +7,15 @@ import (
 	"strings"
 )
 
-func UserPrompt() (reponse string) {
-
+func UserPrompt() (response string) {
 	var (
-		user_input string
+		userInput string
 	)
 
-	fmt.Scanf("%s", &user_input)
+	_, err := fmt.Scanf("%s", &userInput)
+	if err != nil {
+		panic(err)
+	}
 
-	return strings.TrimSpace(user_input)
+	return strings.TrimSpace(userInput)
 }

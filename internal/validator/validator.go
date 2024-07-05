@@ -12,12 +12,11 @@ import (
 	"slices"
 )
 
-func Validator(validation_list []string, user_input string) error {
-
-	val := slices.Contains(validation_list, user_input)
+func Validator(validationList []string, userInput string) error {
+	val := slices.Contains(validationList, userInput)
 
 	if !val {
-		return fmt.Errorf("%s is an invalid value", user_input)
+		return fmt.Errorf("%s is an invalid value", userInput)
 	}
 
 	return nil
