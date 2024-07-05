@@ -7,47 +7,39 @@ package converter
 
 import "fmt"
 
-var rom_mapping = map[string]int{
-	"I": 1,
-	"V": 5,
-	"X": 10,
-	"L": 50,
-	"C": 100,
-	"D": 500,
-	"M": 1000,
-}
+// Converter is used to convert roman numerals to decimal numbers.
+func Converter(userInput string) int {
+	var romMapping = map[string]int{"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
 
-func Converter(user_input string) (reponse int) {
 	// Initialize the results value
-	dec_val := 0
+	decVal := 0
 
 	// Store the previous roman symbol, so as to handle subtraction cases
-	prev_num := ""
+	prevNum := ""
 
-	// Loop through each symbol defined in the user_input
-	for _, v := range user_input {
-
-		if rom_mapping[string(v)] > rom_mapping[prev_num] {
+	// Loop through each symbol defined in the userInput
+	for _, v := range userInput {
+		if romMapping[string(v)] > romMapping[prevNum] {
 			/*
 				If current value is great than the previous
 				value, subtract previous value from current
 				value, e.g.
 				IV (1, 5) = 5 - 1 = 4
 			*/
-			dec_val = rom_mapping[string(v)] - rom_mapping[prev_num]
+			decVal = romMapping[string(v)] - romMapping[prevNum]
 		} else {
 			/*
 				Add the current symbols value to the result,
 				e.g.
 				XI (10, 1) = 10 + 1 = 11
 			*/
-			dec_val += rom_mapping[string(v)]
+			decVal += romMapping[string(v)]
 		}
 
-		prev_num = string(v)
+		prevNum = string(v)
 	}
 
-	fmt.Println(">> Converted decimal value =", dec_val)
+	fmt.Println(">> Converted decimal value =", decVal)
 
-	return dec_val
+	return decVal
 }

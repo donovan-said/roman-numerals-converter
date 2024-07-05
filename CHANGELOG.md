@@ -17,6 +17,12 @@ __Reference__:
 
 # CHANGELOG
 
+## [0.5.0]
+
+### Added
+
+* golangci config and updated pre-commit config to utilise linting
+
 ## [0.4.0]
 
 ### Chnaged

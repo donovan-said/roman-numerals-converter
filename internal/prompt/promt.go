@@ -7,13 +7,16 @@ import (
 	"strings"
 )
 
-func UserPrompt() (reponse string) {
-
+// UserPrompt is used to request user input.
+func UserPrompt() string {
 	var (
-		user_input string
+		userInput string
 	)
 
-	fmt.Scanf("%s", &user_input)
+	_, err := fmt.Scanf("%s", &userInput)
+	if err != nil {
+		panic(err)
+	}
 
-	return strings.TrimSpace(user_input)
+	return strings.TrimSpace(userInput)
 }

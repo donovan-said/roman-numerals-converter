@@ -16,7 +16,7 @@ This list has been obtained from https://en.wikipedia.org/wiki/Roman_numerals
 
 package main
 
-import "github.com/donovan-said/roman-numerals-converter/cmd"
+import "roman-numerals-converter/cmd"
 
 func main() {
 	cmd.Execute()
