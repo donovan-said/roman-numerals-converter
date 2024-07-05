@@ -1,3 +1,3 @@
-module github.com/donovan-said/roman-numerals-converter
+module roman-numerals-converter
 
-go 1.22.0
+go 1.22.5

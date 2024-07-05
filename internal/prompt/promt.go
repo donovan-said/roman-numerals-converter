@@ -7,7 +7,8 @@ import (
 	"strings"
 )
 
-func UserPrompt() (response string) {
+// UserPrompt is used to request user input.
+func UserPrompt() string {
 	var (
 		userInput string
 	)

@@ -7,11 +7,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/donovan-said/roman-numerals-converter/internal/converter"
-	"github.com/donovan-said/roman-numerals-converter/internal/prompt"
-	"github.com/donovan-said/roman-numerals-converter/internal/validator"
+	"roman-numerals-converter/internal/converter"
+	"roman-numerals-converter/internal/prompt"
+	"roman-numerals-converter/internal/validator"
 )
 
+// Execute the roman conversion functionality.
 func Execute() {
 	var romanNumerals = []string{"I", "V", "X", "L", "C", "D", "M"}
 
