@@ -17,7 +17,7 @@ from [freecodecamp - App Ideas](https://www.freecodecamp.org/news/here-are-some-
 
 ## Running the Script
 
-* ```go run cmd/rmcv/main.go```
+* ```go run main.go```
 
 ## References
 

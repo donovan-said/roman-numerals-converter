@@ -17,6 +17,13 @@ __Reference__:
 
 # CHANGELOG
 
+## [0.4.0]
+
+### Chnaged
+
+* cmd package to be called by the main.go in the root directory rather than
+  directly.
+
 ## [0.3.0]
 
 ### Changed
