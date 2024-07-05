@@ -1,20 +1,6 @@
-/*
-The purpose of this tool is convert Roman numerals to decimal numerals.
+// A module used to request user input.
 
-Below is a mapping of Roman numerals to decimal numerals:
-
-I - 1
-V - 5
-X - 10
-L - 50
-C - 100
-D - 500
-M - 1000
-
-This list has been obtained from https://en.wikipedia.org/wiki/Roman_numerals
-*/
-
-package main
+package cmd
 
 import (
 	"fmt"
@@ -28,7 +14,7 @@ import (
 
 var roman_numerals = []string{"I", "V", "X", "L", "C", "D", "M"}
 
-func main() {
+func Execute() {
 
 	fmt.Println(">> Enter Roman Numeral from list of [I, V, X, L, C, D, M]: ")
 	input := prompt.UserPrompt()
