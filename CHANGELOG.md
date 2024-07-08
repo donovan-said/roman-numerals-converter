@@ -17,6 +17,12 @@ __Reference__:
 
 # CHANGELOG
 
+## [0.6.0]
+
+### Changed
+
+* Improved dev dependency management with tools.go and a Makefile
+
 ## [0.5.0]
 
 ### Added

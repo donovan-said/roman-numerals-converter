@@ -3,6 +3,7 @@ module roman-numerals-converter
 go 1.22.5
 
 require (
+	github.com/client9/misspell v0.3.4
 	github.com/go-critic/go-critic v0.11.4
 	github.com/golangci/golangci-lint v1.59.1
 	golang.org/x/lint v0.0.0-20210508222113-6edffad5e616
