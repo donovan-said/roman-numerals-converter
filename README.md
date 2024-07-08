@@ -7,13 +7,16 @@ from [freecodecamp - App Ideas](https://www.freecodecamp.org/news/here-are-some-
 
 - [Roman Numerals to Decimal Converter](#roman-numerals-to-decimal-converter)
   - [Content](#content)
-  - [Steup](#steup)
+  - [Setup](#setup)
+    - [Dependencies](#dependencies)
   - [Running the Script](#running-the-script)
   - [References](#references)
 
-## Steup
+## Setup
 
-* ```go mod init roman-numerals-converter```
+### Dependencies
+
+* To install tools defined in [tools.go](/tools.go) run `make install-tools`
 
 ## Running the Script
 
